@@ -43,7 +43,7 @@ const ProfilePage = () => {
   }
 
   return (
-    <Container className="futuristic-bg">
+    <Container className="futuristic-bg page">
       <h2 className="mt-4 futuristic-text text-center">Your Profile</h2>
       <Card className="futuristic-card shadow-lg mt-4">
         <Card.Body>

@@ -1,21 +1,23 @@
 const express = require("express");
 const { executeQuery } = require("../models/queries");
+const sql = require("mssql");
 
 exports.getProfile = async (req, res) => {
-  // get user ID from query params 
-  const userId = req.query.userId;
+  // from JWT middleware
+  const userId = req.user.id;
   try {
     const user = await executeQuery("SELECT * FROM Users WHERE id = @UserId", [
       { name: "UserId", type: sql.Int, value: userId },
     ]);
     res.status(200).json(user[0]);
   } catch (error) {
+    console.log(error);
     res.status(500).json({ error: "Failed to fetch profile" });
   }
 };
 
 exports.updateProfile = async (req, res) => {
-    const userId = req.user.id; // User ID from JWT middleware
+  const userId = req.user.id;
     const { name, email } = req.body;
     try {
         await executeQuery(

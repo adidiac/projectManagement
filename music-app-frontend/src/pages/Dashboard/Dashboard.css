@@ -2,6 +2,7 @@
     background: linear-gradient(to right, #141e30, #243b55);
     min-height: 100vh;
     color: #ffffff;
+    margin: 0;
   }
   
   .futuristic-text {
@@ -26,4 +27,4 @@
     outline: none;
     box-shadow: none;
   }
-  
+

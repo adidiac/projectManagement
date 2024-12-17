@@ -43,7 +43,7 @@ const SongsPage = () => {
   }
 
   return (
-    <Container>
+    <div className="container futuristic-bg">
       <h2 className="mt-4 text-center">Browse Songs</h2>
       <InputGroup className="mb-4 mt-3">
         <FormControl
@@ -63,7 +63,7 @@ const SongsPage = () => {
           <p className="text-center mt-5">No songs found!</p>
         )}
       </Row>
-    </Container>
+    </div>
   );
 };
 

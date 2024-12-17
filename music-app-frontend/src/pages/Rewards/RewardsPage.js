@@ -29,7 +29,7 @@ const RewardsPage = () => {
   }
 
   return (
-    <Container>
+    <Container className='futuristic-bg'>
       <h2 className="mt-4 futuristic-text">Rewards</h2>
       <p className="text-center futuristic-subtext">
         Redeem your points for exclusive rewards. Choose wisely!

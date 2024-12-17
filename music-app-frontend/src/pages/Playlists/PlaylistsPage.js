@@ -17,12 +17,21 @@ const PlaylistsPage = () => {
     fetchPlaylists();
   }, []);
 
+  const handleSelect = (playlistId) => {
+    console.log(`Playlist selected: ${playlistId}`);
+    window.location.href = `/playlists/${playlistId}`; // Navigate to Playlist Details Page
+  };
+
   return (
-    <div className="container">
-      <h2>Playlists</h2>
-      {playlists.map((playlist) => (
-        <PlaylistCard key={playlist.id} playlist={playlist} />
-      ))}
+    <div className="container futuristic-bg">
+      <h2 className="futuristic-text text-center">Playlists</h2>
+      <div className="row">
+        {playlists.map((playlist) => (
+          <div className="col-md-4 mb-4" key={playlist.id}>
+            <PlaylistCard playlist={playlist} onSelect={handleSelect} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

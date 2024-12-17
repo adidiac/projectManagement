@@ -1,8 +1,11 @@
+const { executeQuery } = require("../models/queries");
+const sql = require("mssql");
 exports.getRewards = async (req, res) => {
     try {
       const rewards = await executeQuery("SELECT * FROM Rewards");
       res.status(200).json(rewards);
     } catch (error) {
+      console.log(error);
       res.status(500).json({ error: "Failed to fetch rewards" });
     }
   };

@@ -34,7 +34,7 @@ const LeaderboardPage = () => {
   }
 
   return (
-    <Container className="futuristic-bg">
+    <Container className="futuristic-bg page">
       <h2 className="mt-4 futuristic-text text-center">Leaderboard</h2>
       <Table striped bordered hover variant="dark" className="mt-4">
         <thead>

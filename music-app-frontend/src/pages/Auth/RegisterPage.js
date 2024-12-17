@@ -22,7 +22,7 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="auth-page">
+    <div className="auth-page futuristic-bg">
       <Container className="d-flex justify-content-center align-items-center">
         <Card className="auth-card shadow-lg">
           <Card.Body>

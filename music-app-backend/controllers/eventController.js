@@ -1,3 +1,6 @@
+const { executeQuery } = require("../models/queries");
+const { getAll, insert } = require("../models/queries");
+const sql = require("mssql");
 exports.getEvents = async (req, res) => {
     try {
       const events = await getAll("Events");

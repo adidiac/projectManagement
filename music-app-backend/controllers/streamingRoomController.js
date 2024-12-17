@@ -1,3 +1,5 @@
+const { executeQuery } = require("../models/queries");
+const sql = require("mssql");
 exports.createRoom = async (req, res) => {
     const { host_id, playlist_id } = req.body;
     try {

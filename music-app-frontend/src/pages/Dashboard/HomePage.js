@@ -30,7 +30,7 @@ const HomePage = () => {
   }
 
   return (
-    <Container className="futuristic-bg">
+    <div className="container futuristic-bg">
       <h2 className="mt-4 futuristic-text text-center">Welcome, {profile?.name}!</h2>
       <Row className="mt-5">
         <Col md={6}>
@@ -55,7 +55,7 @@ const HomePage = () => {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 

@@ -1,3 +1,5 @@
+const { executeQuery } = require("../models/queries");
+const sql = require("mssql");
 exports.getPlaylists = async (req, res) => {
     try {
       const playlists = await executeQuery("SELECT * FROM Playlists");

@@ -30,7 +30,7 @@ const RoomsPage = () => {
   }
 
   return (
-    <Container>
+    <Container className='futuristic-bg'>
       <h2 className="mt-4 text-center futuristic-text">Streaming Rooms</h2>
       <p className="text-center futuristic-subtext">
         Join a room to listen to music, chat, and experience shared playlists in real-time!

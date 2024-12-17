@@ -69,3 +69,9 @@ body {
     overflow: hidden;
   }
   
+  .page {
+    min-height: 100vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    min-width: 100vw;
+  }
+  
